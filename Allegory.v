@@ -58,7 +58,6 @@ Definition Converse (C : Allegory) := Al_converse (Op_converse (a:=C)).
 Definition Inclusion (C: Allegory) := Included (Op_intersect (a:=C)).
 
 Section inclusion.
-(* S1 �� S2 �� R1 �� R2 \u21db (S1 o R1) �� (S2 o R2) �����������ł����� *)
 Variable a: Allegory.
 Variable x y z: a.
 Variable s1 s2 s3: Hom x y.
@@ -185,13 +184,12 @@ Proof.
 Qed.
 
 
-(* S1 �� S2 �� R1 �� R2 \u21db (S1 o R1) �� (S2 o R2)  *)
 Theorem PartiallyOrderd1: Inclusion s1 s2 /\ Inclusion t1 t2 -> Inclusion (s1 o t1) (s2 o t2).
 Proof.
   intros.
   destruct H.
   Lemma H1: Inclusion (s1 o t1) 
-  
+(* to be continued *)  
 
 
 End inclusion.
