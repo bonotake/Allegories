@@ -1,7 +1,4 @@
-Add LoadPath "C:\home\takeo\lab\coq\ConCaT".
-Print LoadPath.
-
-Require Export ConCaT.CATEGORY_THEORY.CATEGORY.Category.
+Require Export Category.
 
 Set Implicit Arguments.
 Unset Strict Implicit.
@@ -61,7 +58,7 @@ Definition Converse (C : Allegory) := Al_converse (Op_converse (a:=C)).
 Definition Inclusion (C: Allegory) := Included (Op_intersect (a:=C)).
 
 Section inclusion.
-(* S1 º S2 È R1 º R2 \u21db (S1 o R1) º (S2 o R2) ‚ª‘‚«‚½‚¢‚Å‚²‚´‚é *)
+(* S1 ï¿½ï¿½ S2 ï¿½ï¿½ R1 ï¿½ï¿½ R2 \u21db (S1 o R1) ï¿½ï¿½ (S2 o R2) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½ï¿½ *)
 Variable a: Allegory.
 Variable x y z: a.
 Variable s1 s2 s3: Hom x y.
@@ -188,7 +185,7 @@ Proof.
 Qed.
 
 
-(* S1 º S2 È R1 º R2 \u21db (S1 o R1) º (S2 o R2)  *)
+(* S1 ï¿½ï¿½ S2 ï¿½ï¿½ R1 ï¿½ï¿½ R2 \u21db (S1 o R1) ï¿½ï¿½ (S2 o R2)  *)
 Theorem PartiallyOrderd1: Inclusion s1 s2 /\ Inclusion t1 t2 -> Inclusion (s1 o t1) (s2 o t2).
 Proof.
   intros.
