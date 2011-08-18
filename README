@@ -1,0 +1,3 @@
+This project is to create Coq definitions of allegories, an extention of categories; A category is an algebraic structure that consists of objects and morphisms, generalization of sets and functions. An allegory is similar but it generalizes sets and relations.
+For more information, see Wikipedia: http://en.wikipedia.org/wiki/Allegory_(category_theory)
+
